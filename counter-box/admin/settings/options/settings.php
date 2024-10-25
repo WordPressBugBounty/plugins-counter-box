@@ -17,7 +17,7 @@ return [
 			'UserTimer'          => __( 'Personal Timer', 'counter-box' ),
 			'TimerStopGo'        => __( 'Resumable Timer', 'counter-box' ),
 			'ContFromDate'       => __( 'Time Since', 'counter-box' ),
-			'timer_end'          => __( 'Timer', 'button-generator-pro' ),
+			'timer_end'          => __( 'Timer', 'counter-box' ),
 			'counter_start'      => __( 'Counter', 'counter-box' ),
 			'Counter'            => __( 'Base Counter', 'counter-box' ),
 			'counter_end'        => __( 'Counter', 'counter-box' ),
