@@ -20,6 +20,21 @@
       min-height: 200px;
     }
 
+    .wpie-item_heading h3 span:last-child{
+      display: block;
+    }
+    .wpie-item_heading h3 span:first-child{
+      display: none;
+    }
+
+    &[open] {
+      .wpie-item_heading h3 span:last-child{
+        display: none;
+      }
+      .wpie-item_heading h3 span:first-child{
+        display: block;
+      }
+    }
 
   }
 

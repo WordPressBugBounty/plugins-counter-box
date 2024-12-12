@@ -1,5 +1,5 @@
 .wpie-notification {
-  --notification-font-icon: 'dashicons';
+  --notification-font-icon: 'WpieIcon';
   --notification-color: var(--wpie-color-orange);
   position: relative;
   //background-color: color-mix(in srgb, var(--notification-color) 7%, white);
@@ -16,7 +16,7 @@
     left: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    content: "\f485";
+    content: "\ea05";
     font-family: var(--notification-font-icon);
     font-weight: 700;
     font-size: 1.5em;

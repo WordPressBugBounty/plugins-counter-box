@@ -13,8 +13,8 @@ jQuery(document).ready(function ($) {
         type: '[data-field="type"]',
         width_unit: '[data-field="width_unit"]',
         height_unit: '[data-field="height_unit"]',
-    };
 
+    };
 
     function set_up() {
         $(selectors.full_editor).wowFullEditor();

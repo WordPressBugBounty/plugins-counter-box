@@ -37,8 +37,12 @@ if ( ! isset( $options['live_preview'] ) ) {
 
             <details class="wpie-item is-builder"<?php echo esc_attr( $builder_open ); ?>>
                 <input type="hidden" name="param[live_preview]" class="wpie-item__toggle" value="1">
-                <summary class="wpie-item_heading"><h3><span class="dashicons dashicons-admin-customizer"></span> <?php
-				        esc_html_e( 'Live preview', 'counter-box' ); ?></h3>
+                <summary class="wpie-item_heading">
+                    <h3>
+                        <span class="wpie-icon wpie_icon-eye-open"></span>
+                        <span class="wpie-icon wpie_icon-eye-closed"></span>
+                        <?php esc_html_e( 'Live preview', 'counter-box' ); ?>
+                    </h3>
                     <span class="wpie-item_heading_toogle">
                     <span class="dashicons dashicons-arrow-down"></span>
                     <span class="dashicons dashicons-arrow-up "></span>
