@@ -104,7 +104,7 @@ class Dashboard {
 	public static function admin_page() {
 		$page_title  = WOWP_Plugin::info( 'name' );
 		$menu_title  = WOWP_Plugin::info( 'menu_title' );
-		$capability  = 'manage_options';
+		$capability  = ManageCapabilities::get_capability();
 		$parent_slug = 'wow-company';
 		add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, WOWP_Plugin::SLUG, [
 			__CLASS__,

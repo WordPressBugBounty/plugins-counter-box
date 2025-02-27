@@ -32,8 +32,10 @@ jQuery(document).ready(function ($) {
                 start = $('[data-field="base_number"]').val();
             }
             content = content.replace('{counter}', '<span class="counter-element -counter">' + start + '</span>');
-            $(element).html(content);
+            let cleanContent = DOMPurify.sanitize(content);
+            $(element).html(cleanContent);
         }
+
 
     };
 

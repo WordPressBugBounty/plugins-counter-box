@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Counter Box\n"
-"POT-Creation-Date: 2024-12-12 13:14+0200\n"
+"POT-Creation-Date: 2025-02-27 10:47+0200\n"
 "PO-Revision-Date: 2024-05-13 14:43+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,28 +41,38 @@ msgstr ""
 msgid "Live preview"
 msgstr ""
 
-#: admin/pages/3.tools.php:18
+#: admin/pages/3.tools.php:19
 msgid "Export Settings"
 msgstr ""
 
 #. translators: %s: plugin name
-#: admin/pages/3.tools.php:22
+#: admin/pages/3.tools.php:23
 #, php-format
 msgid ""
 "Export the  settings for %s as a .json file. This allows you to easily "
 "import the configuration into another site."
 msgstr ""
 
-#: admin/pages/3.tools.php:30
+#: admin/pages/3.tools.php:31
 msgid "Import Settings"
 msgstr ""
 
 #. translators: %s: plugin name
-#: admin/pages/3.tools.php:34
+#: admin/pages/3.tools.php:35
 #, php-format
 msgid ""
 "Import the %s settings from a .json file. This file can be obtained by "
 "exporting the settings on another site using the form above."
+msgstr ""
+
+#: admin/pages/3.tools.php:44
+msgid "Manage Capabilities"
+msgstr ""
+
+#: admin/pages/3.tools.php:46
+msgid ""
+"Manage the visibility of the plugin for users based on their Manage User "
+"Capabilities."
 msgstr ""
 
 #: admin/pages/4.support.php:17
@@ -360,18 +370,18 @@ msgid "Check Version"
 msgstr ""
 
 #. translators: 1: Rating link (URL), 2: Plugin name
-#: classes/Admin/Dashboard.php:62
+#: classes/Admin/Dashboard.php:61
 #, php-format
 msgid ""
 "Thank you for using <b>%2$s</b>! Please <a href=\"%1$s\" "
 "target=\"_blank\">rate us</a>"
 msgstr ""
 
-#: classes/Admin/Dashboard.php:145
+#: classes/Admin/Dashboard.php:144
 msgid "Add New"
 msgstr ""
 
-#: classes/Admin/Dashboard.php:179
+#: classes/Admin/Dashboard.php:178
 msgid "Update"
 msgstr ""
 
@@ -486,6 +496,10 @@ msgstr ""
 
 #: classes/Admin/ListTable.php:341
 msgid "Filter"
+msgstr ""
+
+#: classes/Admin/ManageCapabilities.php:34
+msgid "Save Change"
 msgstr ""
 
 #: classes/Admin/SupportForm.php:24

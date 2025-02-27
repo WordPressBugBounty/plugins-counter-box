@@ -5,7 +5,7 @@ Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,10 @@ Search for answers and ask your questions at [support center](https://wordpress.
 5. Customizing Your Countdown Timer in the Backend.
 
 == Changelog ==
+= 2.0.7 =
+* Added: Control the display of the plugin in the dashboard based on users’ roles
+* Security Improvement: Implemented DOMPurify to sanitize user-generated content and prevent XSS vulnerabilities.
+
 = 2.0.6 =
 * Fixed: Nonce verification logic for improved security.
 

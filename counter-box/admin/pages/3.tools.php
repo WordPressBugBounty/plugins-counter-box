@@ -6,6 +6,7 @@
 
 use CounterBox\Admin\ImporterExporter;
 use CounterBox\WOWP_Plugin;
+use CounterBox\Admin\ManageCapabilities;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -35,6 +36,18 @@ defined( 'ABSPATH' ) || exit;
 				<?php ImporterExporter::form_import(); ?>
             </div>
         </div>
+
+	    <?php if ( current_user_can( 'manage_options' ) ): ?>
+            <hr/>
+            <div class="inside">
+                <h3><span class="dashicons dashicons-admin-users wpie-color-orange"></span>
+                    <span><?php esc_html_e( 'Manage Capabilities', 'counter-box' ); ?></span></h3>
+                <div class="inside">
+                    <p><?php esc_html_e( 'Manage the visibility of the plugin for users based on their Manage User Capabilities.', 'counter-box' ); ?></p>
+				    <?php ManageCapabilities::form(); ?>
+                </div>
+            </div>
+	    <?php endif; ?>
 
     </div>
 
