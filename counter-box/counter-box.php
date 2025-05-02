@@ -3,7 +3,7 @@
  *  Plugin Name:       Counter Box
  *  Plugin URI:        https://wordpress.org/plugins/counter-box/
  *  Description:       The most powerful creator of counters, timers and countdowns
- *  Version:           2.0.7
+ *  Version:           2.0.8
  *  Author:            Wow-Company
  *  Author URI:        https://wow-estore.com/
  *  License:           GPL-2.0+
@@ -19,7 +19,7 @@
  *  Item URI:          https://wow-estore.com/item/counter-box-pro/
  *  Documentation:     https://wow-estore.com/documentations/counter-box-documentation/
  *  Change URI:        https://wordpress.org/plugins/counter-box/#developers
- *
+ *  Demo URI:          https://demo.wow-estore.com/counter-box-pro/
  *  PHP version        7.4
  *
  * @category    Wordpress_Plugin
@@ -109,6 +109,7 @@ if ( ! class_exists( 'WOWP_Plugin' ) ) :
 				'pro'        => 'Item URI',
 				'docs'       => 'Documentation',
 				'change'     => 'Change URI',
+				'demo'       => 'Demo URI',
 			];
 			$plugin_data = get_file_data( __FILE__, $data, false );
 

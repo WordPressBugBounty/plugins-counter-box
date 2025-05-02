@@ -1,154 +1,198 @@
-=== Counter Box: Add Engaging Countdowns, Timers & Counters to Your WordPress Site  ===
+=== Counter Box – Add Countdowns, Timers & Dynamic Counters to WordPress ===
 Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/counter-box-pro/
 Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.0.7
+Stable tag: 2.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily create dynamic countdowns, timers, and counters to increase engagement and boost conversions on your WordPress site.
+Easily add countdowns, timers, and counters to your WordPress site. Ideal for sales, events, stats, and personalized time-based experiences.
 
 == Description ==
 
-### About Counter Box – The Ultimate Countdown and Timer Plugin for WordPress
+[📚 Documentation](https://wow-estore.com/documentations/counter-box-documentation/) | [🚀 Try Pro Demo](https://demo.wow-estore.com/counter-box-pro/)
 
-**Counter Box** is a powerful and easy-to-use plugin that allows you to add dynamic countdowns, timers, and counters to your WordPress site with just a few clicks. Create unlimited countdown timers to drive user engagement, build anticipation for events, and increase conversions. With customizable options, you can match the style of your counters to your website’s design seamlessly, all without writing a single line of code!
+**Counter Box** is a lightweight WordPress plugin that helps you create engaging countdowns and counters. Use it to increase urgency, highlight upcoming events, display statistics, or show time-based messages. No coding required.
 
-**Boost engagement and conversions** on your site with interactive counters that grab your visitors' attention and keep them coming back
+### 🎯 Use Cases:
+- Countdown to product launch or special event
+- Timer for flash sales or promotions
+- Show time since last update or achievement
+- Personalized timers for each visitor
+- Display metric-style counters (e.g., “Total Downloads”)
 
-= Key Features of Counter Box =
+### ⚙️ Core Features:
 
-*   **Unlimited Countdown Timers & Counters:** Create as many countdown timers as your website needs, with no restrictions.
-*   **7 Unique Counter Types:** Choose the counter type that best suits your needs:
-    * **Countdown to Date:** Ideal for setting a countdown to a specific date (e.g., product launches or holiday sales).
-    * **Weekly Countdown:** Set recurring countdowns that reset weekly (e.g., "Countdown to Friday’s Happy Hour").
-    * **Time Since:** Track the time passed since a significant event (e.g., "Years Since Company’s Founding").
-    * **Simple Timer:** Create a timer that counts down from a set duration and resets upon page refresh (e.g., "Limited Time Offer").
-    * **Personal Timer:** A timer unique to each visitor, ideal for personalized offers or discounts.
-    * **Resumable Timer:** A persistent timer that pauses when the user leaves and resumes upon return (e.g., for limited-time promotions).
-    * **Base Counter:** Create a versatile counter that can either count up or down, perfect for tracking metrics (e.g., "Products Sold Today").
-*   **Timezone Compatibility:** Easily set your local timezone to ensure accurate counter displays.
-*   **Realistic Randomization:** Add realism by randomizing your counters for a natural look and feel.
-*   **Customizable Appearance:** Full control over fonts, colors, sizes, and other elements to ensure your counter matches your site design.
-*   **Live Editor:** Design and customize your counters in real-time with the intuitive live editor.
-*   **Lightweight & Efficient:** Runs without jQuery, utilizing only JavaScript for optimal performance.
-*   **GDPR Compliant:** A cookie-free solution that complies with data privacy regulations.
+- **7 Counter Types**:
+  - Countdown to Date
+  - Weekly Countdown (auto-reset weekly)
+  - Time Since (e.g., “Days Since Launch”)
+  - Simple Timer (resets on refresh)
+  - Personal Timer (user-specific countdowns)
+  - Resumable Timer (persists across visits)
+  - Base Counter (static up/down value)
+- **Live Preview Editor** – Customize in real-time
+- **Timezone Controls** – Show correct countdowns for all visitors
+- **Randomized Start Values** – Simulate real-time growth
+- **Flexible Design Settings** – Fonts, sizes, colors, spacing
+- **JavaScript-only** – Lightweight and jQuery-free
+- **GDPR-friendly** – No cookies, no tracking
 
-**Enhance your experience with additional free WordPress plugins:**
+--
 
-*   [Popup Box](https://wordpress.org/plugins/popup-box/) – A plugin for creating eye-catching popups.
-*   [Buttons](https://wordpress.org/plugins/buttons/) – Easily create call-to-action buttons for your popups.
-*   [Button Generator](https://wordpress.org/plugins/button-generation/) – Build custom buttons effortlessly.
-*   [Herd Effects](https://wordpress.org/plugins/mwp-herd-effect/) – Fake notifications and social proof.
-*   [Floating Button](https://wordpress.org/plugins/floating-button/) – Add sticky, floating buttons to your site.
-*   [Calculator Builder](https://wordpress.org/plugins/calculator-builder/) – Create online calculators with ease.
+== 🚀 Pro Features ==
 
-**Ready to improve engagement? Get started with Counter Box today!**
+Unlock advanced tools and visibility rules with **Counter Box Pro**:
 
-### PRO Version – Take Your Countdowns to the Next Level
+- Counter From Date (auto-incrementing from a start date)
+- Counter From Weekday (resets every week)
+- Number Formatting (e.g., 10000 → 10,000)
+- Hide or show content based on timer end
+- Redirect to URL after countdown
+- Show custom messages on finish
+- Trigger JS functions when timer ends
+- Display based on:
+  - URL parameters
+  - Referrer URL
+  - Country (Geo-targeting)
+  - Language
+  - Browser
+  - User role
+  - Scheduled times
+  - Device type (mobile/tablet/desktop)
 
-Upgrade to Pro and unlock new features that will transform your countdowns and timer creation experience:
+🎉 [Upgrade to Pro](https://wow-estore.com/item/counter-box-pro/) to unlock these powerful options.
 
-*   **Counter (From Date):** Start from a specific date and continuously increase the count at a chosen interval (e.g., "Current World Population").
-*   **Counter (From Weekday):** Reset weekly and begin counting again on a specific day (e.g., "Website Visits This Week").
-*   **Number Formatting:** Improve readability with number delimiters for large values.
-*   **Hide Block After Countdown:** Automatically hide blocks of content once a countdown ends (perfect for limited-time promotions).
-*   **Show Block After Countdown:** Reveal hidden content when the timer reaches zero (ideal for launching exclusive content).
-*   **Redirect After Countdown:** Automatically send users to a specific URL when the countdown finishes (great for event registrations or sales).
-*   **Hide the Countdown Box:** Clean up your page by hiding the entire countdown box once it finishes.
-*   **Display Custom Messages:** Show a custom message to visitors when the countdown ends (useful for instructions or follow-ups).
-*   **Call Custom Functions:** Trigger any custom JavaScript function upon countdown completion.
-*   **Activate by URL Parameters:** Show specific counters based on URL parameters (e.g., for marketing campaigns).
-*   **Activate by Referrer URL:** Customize counter visibility for users from specific referral websites.
-*   **Geotargeting:** Display location-specific countdowns based on visitors' countries.
-*   **Responsive Visibility:** Optimize your site by choosing to hide counters on specific devices.
-*   **Scheduling:** Pre-schedule countdowns to appear only during set times or dates.
-*   **User Role Visibility:** Show counters only to specific user roles, like administrators or editors.
-*   **Multi-Language Support:** Show counters based on users’ selected language settings.
-*   **Browser-Specific:** Disable counters for specific browsers as needed.
+--
 
-[Upgrade to Pro](https://wow-estore.com/item/counter-box-pro/) | [Demo Pro](https://demo.wow-estore.com/counter-box-pro/)
+== 🔌 Pair with These Plugins ==
+Boost your site's performance by combining **Counter Box** with:
 
+- [Popup Box](https://wordpress.org/plugins/popup-box/) - Create engaging, custom popups to boost conversions.
+- [Flexi Menu](https://wordpress.org/plugins/flexi-menu/) – Create Floating, Sticky, Dropdown & Icon Menus Easily.
+- [Buttons](https://wordpress.org/plugins/buttons/) – Create powerful call-to-action buttons.
+- [Calculator Builder](https://wordpress.org/plugins/calculator-builder/) – Insert interactive calculators inside popups.
+
+✅ **Boost engagement and conversions by combining Counter Box with these free tools!**
+
+--
 
 = Support =
-Search for answers and ask your questions at [support center](https://wordpress.org/support/plugin/counter-box)
+Need help? Ask questions and get quick answers in our [support center](https://wordpress.org/support/plugin/counter-box/).
+
+== Frequently Asked Questions ==
+
+= Does the plugin use cookies or tracking? =
+No. Counter Box is fully cookie-free and does not store any personal data. It complies with GDPR and privacy standards.
+
+= Can I use different timezones for my counters? =
+Yes. You can set each counter to follow your site’s timezone or the visitor’s local timezone depending on the use case.
+
+= My counter is not showing on the frontend. How can I fix it? =
+This is usually caused by caching. Try the following steps:
+1. **Clear your browser cache** – Use `Ctrl + Shift + R` (Windows) or `Cmd + Shift + R` (Mac).
+2. **Clear your WordPress cache** – If you're using caching plugins like WP Rocket, W3 Total Cache, or LiteSpeed Cache, clear their caches.
+3. **Purge server-side cache** – If you use hosting or proxy-level caching (e.g., Cloudflare, SiteGround), purge it via the control panel.
+4. **Temporarily disable caching** – If issues persist, try disabling your caching plugin to check if it’s the source.
+
+= The counter is only visible to me (administrator). Why? =
+Check if **Test Mode** is enabled in the counter settings. This feature makes the counter visible only to admins for preview/testing purposes.
+
+= Can I use Counter Box in a multisite setup? =
+Yes. But for best results, activate the plugin **individually per site** in your network, not network-wide.
+
+= Does Counter Box affect website speed? =
+No. The plugin is optimized for performance. It uses modern JavaScript only (no jQuery), and is lightweight to ensure fast loading.
+
+= Can I display multiple counters on one page? =
+Absolutely. You can add as many different counters as needed using shortcodes or blocks—each with its own settings.
 
 == Installation ==
-* Installation option 1: Find and install this plugin in the `Plugins` -> `Add new` section of your `wp-admin`
-* Installation option 2: Download the zip file, then upload the plugin via the wp-admin in the `Plugins` -> `Add new` section. Or unzip the archive and upload the folder to the plugins directory `/wp-content/plugins/` via ftp
-* Press `Activate` when you have installed the plugin via dashboard or press `Activate` in the `Plugins` list
-* Go to `Counter Box` section that will appear in your main menu on the left
-* Click `Add new` to create your first countdown
-* Setup your counter
-* Click Save
-* Copy and paste the shortcode, such as [Counter-Box id=1] to where you want the countdown to appear.
-* If you want it to appear everywhere on your site, you can insert it for example in your `header.php`, like this: `<?php echo do_shortcode('[Counter-Box id=1]');?>`
-* If you want to insert the shortcode into a widget, use <a href="https://wordpress.org/plugins/shortcode-widget/">this plugin</a>
+
+### 📌 Install via WordPress Dashboard:
+1. Go to `Plugins` → `Add New`
+2. Search for **"Counter Box"**
+3. Click **Install Now**, then **Activate**
+
+### 📌 Manual Upload:
+1. Download the ZIP file
+2. Go to `Plugins` → `Add New` → `Upload Plugin`
+3. Upload the ZIP and activate the plugin
 
 
 == Screenshots ==
-1. Countdown Timer in Action on the Frontend.
-2. Another Example of a Timer on the Frontend.
-3. Advanced Timer Settings in the Backend.
-4. Countdown Timer content.
-5. Customizing Your Countdown Timer in the Backend.
+1. Countdown displayed on the frontend
+2. Weekly timer example with custom styling
+3. Timer configuration panel in the admin area
+4. Editable content field for the countdown block
+5. Live editor with design customization tools
 
 == Changelog ==
+
+= 2.0.8 =
+* Added: RTL (right-to-left) style support for the admin panel
+* Updated: Helpful links in the settings page
+* Updated: `wp-color-picker-alpha` library to version 3.0.4
+
 = 2.0.7 =
-* Added: Control the display of the plugin in the dashboard based on users’ roles
-* Security Improvement: Implemented DOMPurify to sanitize user-generated content and prevent XSS vulnerabilities.
+* Added: Option to control plugin visibility in the dashboard based on user roles
+* Improved: Security enhancement using DOMPurify to sanitize user-generated content
 
 = 2.0.6 =
-* Fixed: Nonce verification logic for improved security.
+* Fixed: Nonce verification logic for improved security
 
 = 2.0.5 =
-* Fixed: check footer page
+* Fixed: Footer page rendering issue
 
 = 2.0.4 =
-* Updated: UI elements
-* Fixed: menu icon
+* Updated: Admin UI elements
+* Fixed: Missing menu icon
 
 = 2.0.3 =
-* Fixed: compatibility with Elementor text editor
+* Fixed: Compatibility with Elementor text editor
 
 = 2.0.2 =
-* Fixed: minor bug with sanitizing parameters.
+* Fixed: Bug with parameter sanitization
 
 = 2.0.1 =
-* Fixed: The summarize time if set the one tag.
+* Fixed: Time summary bug when only one tag is set
 
 = 2.0 =
-* Added: Export/Import tool
-* Added: Tag and link options
-* Improvement: Refreshed Interface - revamped the plugin's dashboard page style for a more intuitive and user-friendly experience.
+* Added: Export/Import tool for counter configurations
+* Added: Tag and link options for better snippet tracking
+* Improved: Fully redesigned admin interface for a more intuitive experience
 
 = 1.2.4 =
-* Fixed: minor bug with nonce
+* Fixed: Nonce-related bug
 
 = 1.2.3 =
-* Fixed: dynamic property for PHP 8.2
+* Fixed: Compatibility with dynamic properties in PHP 8.2
 
 = 1.2.2 =
-* Fixed: minor bug in page-list
+* Fixed: Minor bug in the page list
 
 = 1.2.1 =
-* Fixed: security update
+* Fixed: Security update
 
 = 1.2 =
-* Fixed: minor bugs
-* Fixed: security issues
-* Fixed: translate file
-* Updated: Support page
+* Fixed: Minor bugs and security issues
+* Fixed: Translation file loading
+* Updated: Support page layout
 
 = 1.1.1 =
-* Fixed: preview script
+* Fixed: Script preview issue
 
 = 1.1 =
-* Added: new type counter 'Timer Stop & Go'
-* Added: style for numbers
+* Added: New counter type – "Timer Stop & Go"
+* Added: Styling options for numbers
 
-= 1.0 = 
+= 1.0 =
 * Initial release
+
+== Upgrade Notice ==
+
+= 2.0 =
+Major update with new counter types, export/import tool, and full UI redesign. Recommended for all users.
