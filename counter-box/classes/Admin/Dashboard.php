@@ -167,7 +167,7 @@ class Dashboard {
 
 		$current_page = self::get_current_page();
 
-		$action = ( isset( $_REQUEST["action"] ) ) ? sanitize_text_field( wp_unslash( $_REQUEST["action"] ) ) : '';
+		$action = ( isset( $_REQUEST["action"] ) ) ? sanitize_text_field( wp_unslash( $_REQUEST["action"] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 
 		echo '<h2 class="nav-tab-wrapper wpie-nav-tab-wrapper">';
 		foreach ( $pages as $key => $page ) {
@@ -175,7 +175,7 @@ class Dashboard {
 			$id    = '';
 
 			if ( $action === 'update' && $page['file'] === 'settings' ) {
-				$id           = ( isset( $_REQUEST["id"] ) ) ? absint( $_REQUEST["id"] ) : '';
+				$id           = ( isset( $_REQUEST["id"] ) ) ? absint( $_REQUEST["id"] ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				$page['name'] = __( 'Update', 'counter-box' ) . ' #' . $id;
 			} elseif ( $page['file'] === 'settings' && ( $action !== 'new' && $action !== 'duplicate' ) ) {
 				continue;
@@ -190,7 +190,7 @@ class Dashboard {
 	public static function get_current_page(): string {
 		$default = DashboardHelper::first_file( 'pages' );
 
-		return ( isset( $_REQUEST["tab"] ) ) ? sanitize_text_field( wp_unslash( $_REQUEST["tab"] ) ) : $default;
+		return ( isset( $_REQUEST["tab"] ) ) ? sanitize_text_field( wp_unslash( $_REQUEST["tab"] ) ) : $default; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 	}
 
 	public static function include_pages(): void {

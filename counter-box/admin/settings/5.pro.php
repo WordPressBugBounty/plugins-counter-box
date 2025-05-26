@@ -25,7 +25,7 @@ $features = [
 		'icon'  => 'wpie-icon wpie_icon-crosshairs',
 		'bg'    => '#4EC477',
 		'title' => __( 'Post-Countdown Actions', 'counter-box' ),
-		'desc'  => __( 'Trigger custom actions when a countdown finishes ➜ Hide/Show content, Redirect, Show message, Run JavaScript.', 'counter-box' ),
+		'desc'  => __( 'Trigger custom actions when a countdown finishes ➜ Hide/Show content, Redirect, Open Link, Show message, Run JavaScript.', 'counter-box' ),
 	],
 
 	[
