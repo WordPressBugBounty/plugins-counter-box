@@ -5,7 +5,7 @@ Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.0.9
+Stable tag: 2.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,10 @@ Absolutely. You can add as many different counters as needed using shortcodes or
 5. Live editor with design customization tools
 
 == Changelog ==
+= 2.0.10 =
+* Improved: Reorganized method order in DBManager class for better readability and maintenance
+* Improved: Minor SQL formatting for consistency
+* Cleaned: Minor code style improvements according to WordPress Coding Standards (WPCS)
 
 = 2.0.9 =
 * Improved: PHPCS compatibility for nonce verification rules
