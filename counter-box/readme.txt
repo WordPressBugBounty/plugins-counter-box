@@ -3,9 +3,9 @@ Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/counter-box-pro/
 Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.11
+Stable tag: 2.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,10 @@ Absolutely. You can add as many different counters as needed using shortcodes or
 5. Live editor with design customization tools
 
 == Changelog ==
+= 2.0.12 =
+* Update: purify.js to version 3.3.0.
+* Fixed: minor bugs.
+
 = 2.0.11 =
 * Improved: Refactored AdminActions class for better performance and readability
 * Improved: Reordered condition checks for better execution performance

@@ -3,7 +3,7 @@
  *  Plugin Name:       Counter Box
  *  Plugin URI:        https://wordpress.org/plugins/counter-box/
  *  Description:       The most powerful creator of counters, timers and countdowns
- *  Version:           2.0.11
+ *  Version:           2.0.12
  *  Author:            Wow-Company
  *  Author URI:        https://wow-estore.com/
  *  License:           GPL-2.0+
@@ -182,8 +182,6 @@ if ( ! class_exists( 'WOWP_Plugin' ) ) :
 		 */
 		public function loaded(): void {
 			UpdateDB::init();
-			$languages_folder = dirname( plugin_basename( __FILE__ ) ) . '/languages/';
-			load_plugin_textdomain( 'counter-box', false, $languages_folder );
 		}
 	}
 
