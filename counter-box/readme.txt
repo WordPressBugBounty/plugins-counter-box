@@ -5,7 +5,7 @@ Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.0.12
+Stable tag: 2.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ Easily add countdowns, timers, and counters to your WordPress site. Ideal for sa
   - Simple Timer (resets on refresh)
   - Personal Timer (user-specific countdowns)
   - Resumable Timer (persists across visits)
-  - Base Counter (static up/down value)
+  - Base Counter (dynamic increment/decrement)
 - **Live Preview Editor** – Customize in real-time
 - **Timezone Controls** – Show correct countdowns for all visitors
 - **Randomized Start Values** – Simulate real-time growth
@@ -131,6 +131,10 @@ Absolutely. You can add as many different counters as needed using shortcodes or
 5. Live editor with design customization tools
 
 == Changelog ==
+= 2.0.13 =
+* Fixed: issue with method Settings::option().
+* Fixed: grammar issue in ListTable.php
+
 = 2.0.12 =
 * Update: purify.js to version 3.3.0.
 * Fixed: minor bugs.

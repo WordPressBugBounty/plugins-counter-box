@@ -170,7 +170,7 @@ class Settings {
 	}
 
 	public static function option( $name, $option ) {
-		return $options[ $name ] ?? '';
+		return $option[ $name ] ?? '';
 	}
 
 }

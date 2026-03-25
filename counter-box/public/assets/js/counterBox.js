@@ -385,8 +385,6 @@ const counterBox = function (selector, options, element) {
             currentDayTarget.setDate(currentDayTarget.getDate() - diff);
         }
 
-        console.log(currentDayTarget)
-
         let diffInSeconds = Math.floor((date - currentDayTarget) / 1000);
         let base = parseFloat(options.number);
         let variable = parseFloat(options.variable);
