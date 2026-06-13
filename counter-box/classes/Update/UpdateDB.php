@@ -67,7 +67,7 @@ class UpdateDB {
 			return;
 		}
 		foreach ( $results as $result ) {
-			$param     = maybe_unserialize( $result->param );
+			$param     = DBManager::safe_unserialize( $result->param );
 			$test_mode = $param['test_mode'];
 			$status    = ( ! empty( $result->status ) ) ? 0 : 1;
 

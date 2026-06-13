@@ -99,6 +99,11 @@ class ImporterExporter {
 			foreach ( $columns as $column ) {
 				$name          = $column->Field;
 				$data[ $name ] = ! empty( $val->$name ) ? $val->$name : '';
+
+				if ( $name === 'param' ) {
+					$data[ $name ] = self::sanitize_param( $data[ $name ] );
+				}
+
 				if ( $name === 'id' || $name === 'status' || $name === 'mode' ) {
 					$formats[] = '%d';
 				} else {
@@ -132,6 +137,32 @@ class ImporterExporter {
 
 		wp_safe_redirect( $redirect_link );
 		exit;
+	}
+
+	/**
+	 * Sanitize an imported `param` value before it is stored.
+	 *
+	 * The `param` column always holds a serialized array of settings. Imported
+	 * JSON is untrusted, so any embedded serialized object is stripped by safely
+	 * unserializing (allowed_classes => false) and re-serializing the result.
+	 * This neutralizes PHP Object Injection payloads before they reach the
+	 * database, so a later unserialize can never instantiate a gadget class.
+	 *
+	 * @param mixed $value Raw `param` value taken from the import file.
+	 *
+	 * @return string Safe, re-serialized array (or empty string when absent).
+	 */
+	public static function sanitize_param( $value ): string {
+		if ( empty( $value ) ) {
+			return '';
+		}
+
+		$clean = DBManager::safe_unserialize( $value );
+		if ( ! is_array( $clean ) ) {
+			$clean = [];
+		}
+
+		return maybe_serialize( $clean );
 	}
 
 	private static function get_file_extension( $str ) {

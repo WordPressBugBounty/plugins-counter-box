@@ -3,9 +3,9 @@ Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/counter-box-pro/
 Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.13
+Stable tag: 2.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ Absolutely. You can add as many different counters as needed using shortcodes or
 5. Live editor with design customization tools
 
 == Changelog ==
+= 2.0.14 =
+* Security: Fixed the Import tool.
+
 = 2.0.13 =
 * Fixed: issue with method Settings::option().
 * Fixed: grammar issue in ListTable.php
@@ -213,6 +216,9 @@ Absolutely. You can add as many different counters as needed using shortcodes or
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.0.14 =
+Security release: fixes a PHP Object Injection vulnerability in the Import tool. All users should update immediately.
 
 = 2.0 =
 Major update with new counter types, export/import tool, and full UI redesign. Recommended for all users.

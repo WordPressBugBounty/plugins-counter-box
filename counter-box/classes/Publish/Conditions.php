@@ -14,6 +14,7 @@
 
 namespace CounterBox\Publish;
 
+use CounterBox\Admin\DBManager;
 use CounterBox\WOWP_Plugin;
 use CounterBox\WOWP_Public;
 
@@ -22,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 class Conditions {
 
 	public static function init( $result ): bool {
-		$param = ! empty( $result->param ) ? maybe_unserialize( $result->param ) : [];
+		$param = ! empty( $result->param ) ? DBManager::safe_unserialize( $result->param ) : [];
 
 		$check = [
 			'status'         => self::status( $result->status ),

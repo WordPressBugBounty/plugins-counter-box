@@ -152,7 +152,7 @@ class Settings {
 			return false;
 		}
 
-		$param           = maybe_unserialize( $result->param );
+		$param           = DBManager::safe_unserialize( $result->param );
 		$param['title']  = $result->title;
 		$param['status'] = $result->status;
 		$param['mode']   = $result->mode;

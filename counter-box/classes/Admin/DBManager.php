@@ -165,7 +165,27 @@ class DBManager {
 		}
 		$result = self::get_data_by_id( $id );
 
-		return isset( $result->param ) ? maybe_unserialize( $result->param ) : false;
+		return isset( $result->param ) ? self::safe_unserialize( $result->param ) : false;
+	}
+
+	/**
+	 * Safely unserialize a stored value.
+	 *
+	 * The `param` field always holds a serialized array of settings, never an
+	 * object. Passing `allowed_classes => false` prevents PHP Object Injection:
+	 * a crafted serialized object (e.g. imported via JSON) can no longer be
+	 * instantiated, so magic methods such as __wakeup()/__destruct() never fire.
+	 *
+	 * @param mixed $data Value to unserialize.
+	 *
+	 * @return mixed Unserialized array/scalar, or the original value if not serialized.
+	 */
+	public static function safe_unserialize( $data ) {
+		if ( ! is_string( $data ) || ! is_serialized( $data ) ) {
+			return $data;
+		}
+
+		return unserialize( trim( $data ), [ 'allowed_classes' => false ] ); // phpcs:ignore WordPress.PHP.NoSilencedErrors, PHPCompatibility.FunctionUse.NewFunctionParameters.unserialize_optionsFound
 	}
 
 	/**

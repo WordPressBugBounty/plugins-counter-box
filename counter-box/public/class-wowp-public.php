@@ -61,7 +61,7 @@ class WOWP_Public {
 			return '';
 		}
 
-		$param  = maybe_unserialize( $result->param );
+		$param  = DBManager::safe_unserialize( $result->param );
 		$singleton->setValue( $atts['id'], $param );
 
 		$rest = '';
@@ -145,7 +145,7 @@ class WOWP_Public {
 						$result = DBManager::get_data_by_id( $attrs['id'] );
 
 						if ( ! empty( $result->param ) ) {
-							$param = maybe_unserialize( $result->param );
+							$param = DBManager::safe_unserialize( $result->param );
 							if ( Conditions::init( $result ) === true ) {
 								$singleton->setValue( $attrs['id'], $param );
 							}
