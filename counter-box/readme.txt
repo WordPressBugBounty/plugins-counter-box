@@ -3,7 +3,7 @@ Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/counter-box-pro/
 Tags: countdown, timer, counter, countdown timer, count down
 Requires at least: 5.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 2.0.14
 License: GPLv2 or later
